@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Articles
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button class="add-btn" (click)="presentModal()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab> 
+
+<div class="table-dark">
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Article ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let article of articles">
+      <th>{{ article.article_id }}</th>
+      <th>{{ article.name }}</th>
+      <th>{{ article.price }}</th>
+      <th>{{ article.quantity }}</th>
+    </tr>
+  </tbody>
+</table>
+</div>

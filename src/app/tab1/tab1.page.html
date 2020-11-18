@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Bills
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button class="print-btn" (click)="print()">
+    <ion-icon name="print-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab> 
+
+<div class="table-dark">
+<table class="table table-striped table-dark" id="table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Bill_ID</th>
+      <th scope="col">Client Name</th>
+      <th scope="col">RNC</th>
+      <th scope="col">Description</th>
+      <th scope="col">Date</th>
+      <th scope="col">Article</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Sub-Total</th>
+      <th scope="col">ITBIS</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let bill of bills">
+      <th>{{ bill.bill_id }}</th>
+      <th>{{ bill.client_name }}</th>
+      <th>{{ bill.rnc }}</th>
+      <th>{{ bill.description }}</th>
+      <th>{{ bill.date }}</th>
+      <th>{{ bill.article_id }}</th>
+      <th>{{ bill.quantity }}</th>
+      <th>{{ bill.sub_total }}</th>
+      <th>{{ bill.itbis }}</th>
+      <th>{{ bill.total }}</th>
+    </tr>
+  </tbody>
+</table>
+</div>

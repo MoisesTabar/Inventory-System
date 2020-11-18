@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register an Article</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="saveArticleForm" (ngSubmit)="saveArticle(saveArticleForm.value)">
+      <ion-item>
+        <ion-label position="floating" mode="md">Article ID</ion-label>
+        <ion-input type="number" formControlName="article_id"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" mode="md">Name</ion-label>
+        <ion-input type="text" formControlName="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" mode="md">Price</ion-label>
+        <ion-input type="number" formControlName="price"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" mode="md">Quantity</ion-label>
+        <ion-input type="number" formControlName="quantity"></ion-input>
+      </ion-item>
+
+      <ion-button color="success" type="submit">Register article</ion-button>
+  </form>
+</ion-content>

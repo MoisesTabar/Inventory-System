@@ -1,0 +1,32 @@
+{
+    "/articles/save/*":{
+        "target": "http://127.0.0.1:8000/",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/bills/save/*":{
+        "target": "http://127.0.0.1:8000/",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/bills/update/*":{
+        "target": "http://127.0.0.1:8000/",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/bills/get/*":{
+        "target": "http://127.0.0.1:8000/",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/articles/get":{
+        "target": "http://127.0.0.1:8000/",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    "/bills/delete":{
+        "target": "http://127.0.0.1:8000/",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

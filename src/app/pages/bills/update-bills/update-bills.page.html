@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>update-bills</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="updateBillsForm" (ngSubmit)="updateBills(updateBillsForm.value)">
+  
+      <ion-item>
+        <ion-label position="floating">Bill ID</ion-label>
+        <ion-input formControlName="bill_id"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Client Name</ion-label>
+        <ion-input  formControlName="client_name"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label position="floating">RNC</ion-label>
+        <ion-input formControlName="rnc"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Description</ion-label>
+        <ion-input formControlName="description"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Quantity</ion-label>
+        <ion-input formControlName="quantity"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Article</ion-label>
+        <ion-input formControlName="article_id"></ion-input>
+      </ion-item>
+  
+      <ion-button color="success" type="submit">Register Bill</ion-button>
+  
+    </form>
+  
+</ion-content>

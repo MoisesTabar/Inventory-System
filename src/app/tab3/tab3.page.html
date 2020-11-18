@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Bill Maker
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button class="add-btn">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+
+    <ion-fab-button (click)="presentModal()" class="add-btn">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button (click)="presentSecondModal()" class="add-btn">
+      <ion-icon name="duplicate-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button (click)="presentThirdModal()" class="add-btn">
+      <ion-icon name="trash-outline"></ion-icon>
+    </ion-fab-button>
+
+  </ion-fab-list>
+</ion-fab> 

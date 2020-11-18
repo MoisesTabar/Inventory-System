@@ -1,0 +1,31 @@
+.print-btn{
+    --background: #2DD36F;
+    --background-activated: #26b15d;
+    --color: white;
+    cursor: pointer;
+}
+
+.table-dark{
+    padding: 15px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+@media print{
+    ion-header{
+        visibility: hidden;
+    }
+    ion-fab{
+        visibility: hidden;
+    }
+    ion-tabs{
+        visibility: hidden;
+    }
+    .print-btn{
+        visibility: hidden;
+    }
+    .table-dark{
+        visibility: visible;
+    }
+}
